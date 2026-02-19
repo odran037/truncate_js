@@ -35,7 +35,7 @@ available:
 
 ## API
 
-### `$()` --- Query Single Element
+### `qs()` --- Query Single Element
 
 ``` js
 const el = qs(".card");
@@ -49,7 +49,7 @@ const el = qs(".item", someElement);
 
 ------------------------------------------------------------------------
 
-### `$$()` --- Query Multiple Elements
+### `qsa()` --- Query Multiple Elements
 
 Returns an **array** (not a NodeList).
 
@@ -95,7 +95,7 @@ domkit.ready(() => {
 
 ``` js
 domkit.ready(() => {
-  const button = $(".btn");
+  const button = qs(".btn");
 
   domkit.on("click", () => {
     console.log("Clicked!");
